@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepe Trump In Jail</title>
+    <link rel="icon" type="image/gif" href="chips.gif">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #4d93c4;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            max-width: 600px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .logo {
+            width: 150px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 1px #606060;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333333;
+            margin-top: 0;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background 0.3s;
+        }
+        .telegram-btn {
+            background: #2393d4;
+        }
+        .twitter-btn {
+            background: #18a41f;
+        }
+        .pump-btn {
+            background: #911ae0;
+        }
+        .buttons img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .content {
+            margin: 20px 0;
+            color: #333333;
+            max-width: 800px;
+            text-align: middle;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333333;
+            color: #ffffff;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const content1 = document.getElementById('content1');
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                observer.observe(content1);
+            });
+        </script>
+</head>
+<body>
+    <div class="container" id="content1">
+        <img src="image.png" alt="Pepe Trump Logo" class="logo">
+        <h1>Pepe Trump In Jail</h1>
+        <div class="content">
+            <p>Some haters are saying Pepe Trump comitted fraud but the real ones know Pepe Trump only cares about mooning all of our bags.</p>
+            <p>CA : FMRixHS8xbY112Ysy1nZBACcxhmke8JimMR85uunpump</p>
+        </div>
+        <div class="buttons">
+            <a href="https://t.me/pepetrumpjail" target="_blank" class="telegram-btn">
+                <img src="telegram.png" alt="Telegram Icon"> Join Telegram
+            </a>
+            <a href="https://x.com/STONEY_SOLANA" target="_blank" class="twitter-btn">
+                <img src="twitter.png" alt="Twitter Icon"> Follow on Twitter
+            </a>
+            <a href="https://pump.fun/FMRixHS8xbY112Ysy1nZBACcxhmke8JimMR85uunpump" target="_blank" class="pump-btn">
+                <img src="pump.png" alt="Pump Icon"> Pump.fun
+            </a>
+        </div>
+    </div>
+</body>
+</html>
